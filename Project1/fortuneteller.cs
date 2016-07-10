@@ -10,11 +10,12 @@ namespace Project1
     {
         static void Main(string[] args)
         {
-
+            String.Compare("A", "a", true);
 
             Console.WriteLine("Type out your first name:");
             string firstName = Console.ReadLine();
 
+            //used for spacing in final product
             Console.WriteLine();
 
             Console.WriteLine("Type out your last name:");
@@ -34,7 +35,7 @@ namespace Project1
 
             Console.WriteLine("What ROYGBIV color is your favorite? (Any questions concerning \"ROYGBIV\" type out the word \"help\" then press enter");
             string favColor = Console.ReadLine();
-            while(favColor == "help")
+            while (favColor == "help")
             {
                 Console.WriteLine("\"ROYGBIV\" stands for red, orange, yellow, green, blue, indio and violet");
                 Console.WriteLine("So which of these options are your favorite?");
@@ -53,76 +54,84 @@ namespace Project1
             Console.WriteLine();
             Console.WriteLine();
 
-            if(age %2 != 0)
+            if (age % 2 != 0)
             {
-                Console.WriteLine("You will retire in 93 years! Oh No!");
+                Console.WriteLine("93 years");
             }
             else
             {
-                Console.WriteLine("You will retire in half a year! Because you'll win the lotto!");
+                Console.WriteLine("6 months!");
             }
 
             Console.WriteLine();
 
-            if(siblings == 0)
+            if (siblings == 0)
             {
-                Console.WriteLine("You will soon live in the Rain Forest!");
+                Console.WriteLine("Rain Forest");
             }
-            if(siblings == 1)
+            else if (siblings == 1)
             {
-                Console.WriteLine("You will soon live on Mars!");
+                Console.WriteLine("Mars");
             }
-            if(siblings == 2)
+            else if (siblings == 2)
             {
-                Console.WriteLine("You will soon live in in the Sahara Desert!");
+                Console.WriteLine("Sahara Desert");
             }
-            if(siblings == 3)
+            else if (siblings == 3)
             {
-                Console.WriteLine("You will soon live in Atlantis");
+                Console.WriteLine("Atlantis");
             }
-            if(siblings > 3)
+            else if (siblings > 3)
             {
-                Console.WriteLine("You will soon live in a haunted house!");
+                Console.WriteLine("th moon");
             }
-
-            Console.WriteLine();
-
-            if(favColor == "red")
+            else
             {
-                Console.WriteLine("You will now get from place to place via hovercraft");
-            }
-            if(favColor == "orange")
-            {
-                Console.WriteLine("You will now get from place to place via spaceship");
-            }
-            if(favColor == "yellow")
-            {
-                Console.WriteLine("You will now get from place to place via your feet");
-            }
-            if(favColor == "green")
-            {
-                Console.WriteLine("You will now get from place to place via bigfoot");
-            }
-            if(favColor == "blue")
-            {
-                Console.WriteLine("You will now get from place to place via teleportation");
-            }
-            if(favColor == "indigo")
-            {
-                Console.WriteLine("You will now get from place to place via transformer");
-            } 
-            if(favColor == "violet")
-            {
-                Console.WriteLine("You will now get from place to place via delorean");
+                Console.WriteLine("N/A");
             }
 
             Console.WriteLine();
 
-            string[] birthMonthArray = { birthMonth };
-            string[] firstNameArray = { firstName };
-            string[] lastNameArray = { lastName };
+            if (favColor == "red")
+            {
+                Console.WriteLine("hovercraft");
+            }
+            else if (favColor == "orange")
+            {
+                Console.WriteLine("spaceship");
+            }
+            else if (favColor == "yellow")
+            {
+                Console.WriteLine("foot");
+            }
+            else if (favColor == "green")
+            {
+                Console.WriteLine("bigfoot");
+            }
+            else if (favColor == "blue")
+            {
+                Console.WriteLine("teleportation");
+            }
+            else if (favColor == "indigo")
+            {
+                Console.WriteLine("transformer");
+            }
+            else if (favColor == "violet")
+            {
+                Console.WriteLine("delorean");
+            }
+            else
+            {
+                Console.WriteLine("N/A");
+            }
+            
 
-            if (birthMonthArray[0] == firstNameArray[0] || lastNameArray[0])
+            Console.WriteLine();
+
+
+                
+
+
 
             Console.ReadKey();
 
